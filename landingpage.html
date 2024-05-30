@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LANDING PAGE</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background-color: white;
+        padding: 0.1px;
+      
+    }
+    
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+    
+    nav ul li a {
+        color: black;
+        text-decoration: none;
+        
+    }
+    nav ul li a:hover{
+        cursor: pointer;
+        background-color: black;
+        color:white;
+    }
+    .intro {
+        background-color: white;
+        padding: 50px 90px;
+        text-align: center;
+        background-image: url("https://wallpaper.forfun.com/fetch/b4/b45b3a47efdbf6866b4fa3f2e323ecab.jpeg");
+        background-repeat: no-repeat;
+        background-size: 100% 150%;
+        color: white;
+        height:300px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .button{
+        background-color: black;
+        color:white;
+        height:50px;
+        width:120px;
+        border-radius: 10px;
+        
+
+    }
+    .button:hover{
+        background-color: white;
+        color:black;
+        cursor: pointer;
+    }
+    .category{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .c1:hover{
+       opacity: 50%;
+       cursor:pointer;
+    }
+    .c2:hover{
+        opacity: 50%;
+        cursor:pointer;
+     }
+     .c3:hover{
+        opacity: 50%;
+        cursor:pointer;
+     }
+     .c4:hover{
+        opacity: 50%;
+        cursor:pointer;
+     }
+    .Collections{
+      
+        justify-content: space-around;
+       margin-left: 20px;
+       margin-right: 20px;
+      
+    }
+    
+    .column1 {
+        flex: 1;
+       height:300px;
+       text-align: center;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        background-image: url("https://img.freepik.com/free-photo/young-beautiful-smiling-hipster-woman-trendy-summer-dress-sexy-carefree-woman-posing-street-near-wall-hat-sunset-positive-model-outdoors-sunglasses-cheerful-happy_158538-26081.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        font-size: 55px;
+        color: black;
+        padding-right: 2px;
+      
+    }
+    .column1:hover{
+        height:320px;
+      
+        cursor: pointer;
+    }
+    .column2 {
+        flex: 1;
+       height:300px;
+       text-align: center;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        background-image: url("https://s3.picofile.com/file/8225533368/142fbc0c94a7e01fs.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        font-size: 55px;
+        color: black;
+        padding-right: 2px;
+        margin-left: 15px;
+    }
+    .column2:hover{
+        height:320px;
+      
+        cursor: pointer;
+    }
+    .column3 {
+        flex: 1;
+        height:300px;
+        text-align: center;
+         border-radius: 5px;
+         box-shadow: 0 0 10px rgba(0,0,0,0.1);
+         background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyqhRqOKO49gqXlrTaRtYeOnaOznIrHGqYhQO33etJr7ZQJVVRTQNiGfWo1YAOXGgyhi0&usqp=CAU");
+         background-repeat: no-repeat;
+         background-size: 100% 100%;
+         font-size: 55px;
+         color: black;
+         margin-left: 15px;
+    }
+    .column3:hover{
+        height:320px;
+      
+        cursor: pointer;
+    }
+    .about{
+        margin-left: 20px;
+        margin-right: 20px;
+        background-color: wheat;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        height:500px;
+    }
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        height: 5vh;
+    }
+    @media (max-width: 768px) {
+        .Collections {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .column {
+            margin: 15px 0;
+        }
+    }
+    
+</style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="intro" >
+       
+        <p style="font-size: 60px; ">Welcome to Fashionista<p style="font-size: 30px; margin-bottom:5%"> 20% off now on your favourite outfit </p>
+    <button class="button">Shop now</button>
+    </p>
+    </section>
+    <section class="category" >
+        <h1 style="text-align: center; font-size:50px">Top Categories</h1>
+        <div style="display: flex;">
+        <div class="c1"  style="margin-left: 20px;">
+           <img style="height:300px;width:300px; " src="https://i.pinimg.com/originals/8e/b0/64/8eb064e65b0faa5d71fac86c64cd8630.jpg" alt="">
+           <p style="text-align: center;">Accessories</p>
+        </div>
+        <div class="c2" style="margin-left: 85px;">
+            <img style="height:300px;width:300px;" src="https://i.pinimg.com/736x/20/79/e0/2079e02946b78a8af3bd90799451e393.jpg" alt="">
+            <p style="text-align: center;">Shoes</p>
+         </div>
+         <div class="c3" style="margin-left: 85px;">
+            <img style="height:300px;width:300px;  " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXoZBcm6OUpg9MOtV6KhkqxSaIXvpin8ucV7Qf7DdxUg&s" alt="">
+            <p style="text-align: center;">Jewellary</p>
+         </div>
+         <div class="c4" style="margin-left: 85px;">
+            <img style="height:300px;width:300px;  " src="https://i.pinimg.com/736x/d4/08/14/d40814173d2773f2b198e0d87890ca3b.jpg" alt="">
+            <p style="text-align: center;">Outfits</p>
+         </div>
+        </div>
+    </section>
+    <section class="Collections">
+        <h1 style="text-align: center; font-size:50px">Collections</h1>
+        <div style="  display: flex;">
+        <div class="column1">
+            
+            <p ><strong>Summer <br> Collection</strong></p>
+        </div>
+        <div class="column2">
+            <p ><strong>Winter <br> Collection</strong></p>
+        </div>
+        <div class="column3">
+            <p ><strong>Festival <br> Collection</strong></p>
+        </div>
+        </div>
+    </section>
+    <section class="about">
+        <h1 style="text-align: center; font-size:50px">About Us</h1>
+        <p style="font-size: 20px;margin-left:3%;margin-right:3%;margin-top:3%">Welcome to Fashionista, where style meets substance and fashion knows no bounds. At Fashionista, we believe that fashion is more than just clothing – it's an expression of individuality, a celebration of creativity, and a statement of self-confidence.
+            <br><br><br>
+            Founded in 2010, Fashionista has grown from a small boutique into a leading fashion brand known for its innovative designs, quality craftsmanship, and commitment to sustainability. Our journey began with a vision to transform the fashion industry by blending classic elegance with modern trends, and today, we are proud to be at the forefront of contemporary fashion. <br><br><br>
+            Our mission at Fashionista is to empower individuals through fashion. We strive to create timeless pieces that resonate with our diverse clientele, making them feel confident, stylish, and unique. We are dedicated to pushing the boundaries of design while maintaining the highest standards of quality and sustainability.
+        </p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Fashionista. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
