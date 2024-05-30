@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<style>
+.cal {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 35%;
+    margin-top: 7%;
+    
+}
+
+.display {
+    width: 100%;
+    height: 80px;
+    border: none;
+    outline: none;
+    text-align: right;
+    font-size: 50px;
+    background-color: black;
+    color: white;
+    pointer-events: none;
+    margin-bottom: 20px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    background-color: #eee;
+    text-align: center;
+    border-radius: 5px;
+}
+
+button.operator {
+    color: orangered;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #ddd;
+}
+
+button.zero {
+    grid-column: span 2;
+}
+
+</style>
+<body>
+    <div class="cal">
+        <input type="text" class="display" />
+        <div class="btn-grid">
+            <button class="operator" data-value="C">C</button>
+            <button class="operator" data-value="DEL"><-</button>
+            <button class="operator" data-value="%">%</button>
+            <button class="operator" data-value="/">/</button>
+
+            <button data-value="7">7</button>
+            <button data-value="8">8</button>
+            <button data-value="9">9</button>
+            <button class="operator" data-value="*">*</button>
+
+            <button data-value="4">4</button>
+            <button data-value="5">5</button>
+            <button data-value="6">6</button>
+            <button class="operator" data-value="-">-</button>
+
+            <button data-value="1">1</button>
+            <button data-value="2">2</button>
+            <button data-value="3">3</button>
+            <button class="operator" data-value="+">+</button>
+
+            <button data-value="0" class="zero">0</button>
+            <button data-value=".">.</button>
+            <button class="operator" data-value="=">=</button>
+        </div>
+    </div>
+
+    <script>
+      const display = document.querySelector(".display");
+const buttons = document.querySelectorAll("button");
+const specialChars = ["%", "*", "/", "-", "+", "="];
+let output = "";
+
+const calculate = (btnValue) => {
+    display.focus();
+    if (btnValue === "=" && output !== "") {
+        output = eval(output.replace("%", "/100"));
+    } else if (btnValue === "C") {
+        output = "";
+    } else if (btnValue === "DEL") {
+        output = output.toString().slice(0, -1);
+    } else {
+        if (output === "" && specialChars.includes(btnValue)) return;
+        output += btnValue;
+    }
+    display.value = output;
+};
+
+buttons.forEach((button) => {
+    button.addEventListener("click", (e) => calculate(e.target.dataset.value));
+});
+
+    </script>
+</body>
+</html>
