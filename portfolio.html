@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOMDATTA NAG</title>
+</head>
+<style>
+    .body{
+        background-image: url("https://img.freepik.com/premium-photo/abstract-gradient-background-background-design_509471-38.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+#navlist {
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  height: 5%;
+}
+
+
+#navlist a {
+  float:left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 25px;
+  text-decoration: none;
+  font-size: 25px;
+}
+.navlist-right{
+  float:right;
+}
+#navlist a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.container { 
+  background-color: white; 
+  width: 80%; 
+  border-radius: 15px; 
+  right: 15%;
+} 
+
+.skill { 
+  background-color: black; 
+  color: white; 
+  padding: 1%; 
+  text-align: right; 
+ 
+  border-radius: 15px; 
+} 
+
+.html { 
+  width: 99%; 
+} 
+
+.CSS { 
+  width: 97%; 
+} 
+.javascript{
+  width:97%;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+        
+    
+    .profile{
+        
+  margin-left:10%;
+  margin-right: auto;
+  margin-top: 7%;
+    }
+@import url(
+"https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --background-color1: #fafaff;
+  --background-color2: #ffffff;
+  --background-color3: #ededed;
+  --background-color4: #cad7fda4;
+  --primary-color: #4b49ac;
+  --secondary-color: #0c007d;
+  --Border-color: #3f0097;
+  --one-use-color: #3f0097;
+  --two-use-color: #5500cb;
+}
+
+.button{
+  font-size: 30px;
+  border-color: blueviolet;
+  
+  height: 100px; 
+  width:300px;
+  color:white;
+  background-color: black;
+}
+.button:hover{
+  background-color: #ddd; 
+  color: black; 
+  cursor:pointer
+}
+.margin{
+  
+    border: 1px solid black;
+    margin: 25px 50px 75px 100px;
+    background-color: lightblue;
+  
+}
+#skills{
+  text-align: center; background-color:white; margin-right: 20%; margin-left: 20%;
+  border-radius: 8%;
+}
+#skills:hover{
+margin-left: 18%;
+margin-right: 18%;
+cursor:pointer;
+}
+#project{
+  text-align: center; background-color:white; margin-right: 20%; margin-left: 20%;
+  border-radius: 95px;
+}
+
+#project:hover{
+  margin-left: 18%;
+margin-right: 18%;
+cursor:pointer;
+}
+#contact{
+  text-align: center; background-color:white; margin-right: 20%; margin-left: 20%; height:600px;
+  border-radius: 55px;
+}
+#contact:hover{
+  margin-left: 18%;
+  margin-right: 18%;
+  cursor:pointer;
+}
+</style>
+<body class="body">
+
+  <div id="navlist">
+    <a href="#about" >ABOUT</a>
+    <a href= "#resume" >RESUME</a>
+    <a href="#skills" >MY SKILLS</a>
+    <a href= "#project">PROJECTS</a>
+    <a href= "#contact">CONTACT</a>
+    
+    </div>
+ <div id="about" style="display: flex;">
+ <img src="https://i.ibb.co/099g3h0/48f8ffb0-78c2-49dc-9ea3-959cadc98974.jpg" alt="profile" style=" height:800px" class="profile"><br><br><br>
+ <div style="margin-right: 10%;  margin-top: 7%; padding-left: 8%;"><p style="font-size: 151px;"><strong style="padding-left:13%">SOMDATTA NAG</strong><br></p><br>
+  <strong style="font-size: 70px; text-align:center; padding-left: 14%;">WEB DEVELOPER AND DESIGNER</strong><p style="font-size:40px;">I am a 19 year old Software develepor and Web designer from Siliguri. I am skilled in Software development and web-design. My experiences include working in both group and solo projects. The programming languages I mostly work with are Java,C++,Python,Javascript.Technical skills include Html and CSS. Currently looking for more opportunities to showcase my work and contribute to more software projects.</p></p></div>
+ 
+</div>
+<br>
+<br>
+<div id="resume" style="padding-left: 80%; "><button class="button" >DOWNLOAD RESUME</button></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+ <div id="skills" >
+  <h3 class="sk" style="color: black;"><strong  style="color: black;font-size:151px; text-align:center; border-radius: 15px;">My Skills</strong></h3>
+  <p style="font-size:90px;">HTML</p> <br>
+    <div class="container" style="margin-left:9%;"> <br>
+        <div class="skill html" style="font-size:40px;">99%</div> <br>
+    </div> 
+  
+    <p style="font-size:90px;">CSS</p> <br>
+    <div class="container " style="margin-left:9%;"> <br>
+        <div class="skill CSS" style="font-size:40px;">97%</div></div> <br>
+        <p style="font-size:90px;">JAVASCRIPT</p> <br>
+        <div class="container " style="margin-left:9%;"> <br>
+            <div class="skill javascript" style="font-size:40px;">97%</div> </div><br>
+            <p style="font-size:90px;">PYTHON</p> <br>
+            <div class="container " style="margin-left:9%;"> <br>
+                <div class="skill CSS" style="font-size:40px;">97%</div></div> <br>
+                <p style="font-size:90px;">JAVA</p> <br>
+                <div class="container " style="margin-left:9%;"> <br>
+                    <div class="skill CSS" style="font-size:40px; width:85%">85%</div></div> <br>
+        
+ </div>
+ <br>
+ <br>
+ <br><br><br>
+ <div class="pr" id="project" >
+  <h3 style="color: black;"><strong  style="color: black;font-size:151px; text-align:center">My Projects</strong></h3>
+  <br><br><li><div>
+  <div style="font-size: 90px; "><u>Movie Streaming Website </u></div><br>
+  <p style="font-size: 40px; padding-left:2%">A website made for streaming, searching and downloading movies. <br><br>
+    <strong>Type: </strong> Group project <br><br>
+  <strong>Language used: </strong> Html, CSS, javascript <br><br>
+  <strong>Framework</strong>: React <br><br>
+  <strong>IMAGES</strong>: <br>
+  <div style="display: flex;"><a  style=" padding-left:2%" href="https://ibb.co/R2DBPDk"><img style="height: 400px;" src="https://i.ibb.co/2qksPk1/Screenshot-2024-05-15-222423.png" alt="Screenshot-2024-05-15-222423"></a>
+    <a  style=" padding-left:2%"  href="https://ibb.co/7yDx9Rd"><img style="height: 400px; width:850px" src="https://i.ibb.co/VBG0KQc/Screenshot-2024-05-15-222439.png" alt="Screenshot-2024-05-15-222439" ></a><br /></div><div>
+    <a  style=" padding-left:2%" href="https://ibb.co/L9xq72F"><img style="height: 400px; width:950px" src="https://i.ibb.co/NW9kBHv/Screenshot-2024-05-15-222451.png" alt="Screenshot-2024-05-15-222451" ></a>
+  </div>
+  </p>
+</div>
+<br><br>
+<div style="font-size: 90px; "><u>Clothing Store Website </u></div><br>
+  <p style="font-size: 40px; padding-left:2%">An e-commerce website made for ordering, searching and shopping clothes and items from a store. <br><br>
+    <strong>Type: </strong> Solo project <br><br>
+  <strong>Language used: </strong> Html, CSS, javascript <br><br>
+ 
+  <div style="font-size: 40px;"><strong style="font-size: 40px;">Framework</strong>: React <br><br></div>
+  <strong style="font-size: 40px;">Github Link: </strong> <a style=" font-size:40px" class="p1" href="https://github.com/SomdattaNag/fashion-website">https://github.com/SomdattaNag/fashion-website</a></p><br><br>
+  <strong style="font-size: 40px;">IMAGES:</strong>: <br>
+  <div style="display: flex;"><a  style=" padding-left:2%" href=""><img style="height: 400px;" src="https://i.ibb.co/LtcwXn6/Screenshot-2023-07-21-165836.png" alt=""></a>
+    <a  style=" padding-left:2%"  href=""><img style="height: 400px; width:700px" src="https://i.ibb.co/kKHCLL7/Screenshot-2023-07-21-161607.png" alt="" ></a><br />
+    </div><div style="display: flex;">
+    <a  style=" padding-left:2%" href=""><img style="height: 400px; width:800px" src="https://i.ibb.co/Km6jsZL/Screenshot-2023-07-21-165956.png" alt="" ></a> <br>
+    <a  style=" padding-left:2%" href=""><img style="height: 400px; width:900px" src="https://i.ibb.co/Gnm3SK7/Screenshot-2023-07-21-161424.png" alt="" ></a></div><div style="display: flex;">
+    <a  style=" padding-left:2%" href=""><img style="height: 400px; width:950px" src="https://i.ibb.co/XzpJC5g/Screenshot-2023-07-21-161454.png" alt="" ></a>
+    <a  style=" padding-left:2%" href=""><img style="height: 400px; width:800px" src="https://i.ibb.co/6wg9b21/Screenshot-2023-07-21-161820.png" alt="" ></a>
+  </div>
+  </p>
+<br><br>
+<div style="font-size: 90px; "><u>Admin Panel for Ambulance Booking Website </u></div><br>
+  <p style="font-size: 40px; padding-left:2%">The admin panel to check the user and driver activities, sales etc. for an ambulance booking website. <br><br>
+    <strong>Type: </strong> Solo project <br><br>
+  <strong>Language used: </strong> Html, CSS, javascript <br><br>
+  <strong>Framework</strong>: React <br><br>
+  <strong>IMAGES:</strong> <br>
+  <div style="display: flex;"><a  style=" padding-left:2%" href=""><img style="height: 400px;" src="https://i.ibb.co/Tv56fZg/Screenshot-2024-05-19-200529.png" alt=""></a>
+    <a  style=" padding-left:2%"  href=""><img style="height: 400px; width:890px" src="https://i.ibb.co/fSmM7js/Screenshot-2024-05-19-200545.png" alt="" ></a><br />
+  
+    
+  </div>
+  </p>
+  <br><br>
+  <div style="font-size: 90px; "><u>Clone of a film-making website</u></div><br>
+  <p style="font-size: 40px; padding-left:2%">A clone of the website 'Cineplex' made for teaching and learning the art of filmmaking.<br><br>
+    <strong>Type: </strong> Group project <br><br>
+  <strong>Language used: </strong> Html, CSS, javascript <br><br>
+  <strong>Framework</strong>: React <br><br>
+  <strong>Github Link: </strong> <a  class="p2" href="https://github.com/isayandip2004/CinePlex">https://github.com/isayandip2004/CinePlex</a><br><br>
+  <strong>IMAGES:</strong> <br>
+  <div style="display: flex;"><a  style=" padding-left:2%" href=""><img style="height: 400px;" src="https://i.ibb.co/YjRpPjW/Screenshot-2023-07-21-163031.png" alt=""></a>
+    <a  style=" padding-left:2%"  href=""><img style="height: 400px; width:900px" src="https://i.ibb.co/R2s0XCh/Screenshot-2023-07-21-163046.png" alt="" ></a><br /></div><div>
+    <a  style=" padding-left:2%"  href=""><img style="height: 400px; width:950px" src="https://i.ibb.co/bsKqWXX/Screenshot-2023-07-21-163106.png" alt="" ></a><br />
+</div>
+</div>
+<br><br>
+</li>
+ </div>
+ <br><br><br><br>
+ <div id="contact" >
+  <h3  style="color: black;"><strong  style="color: black;font-size:151px; text-align:center">Contact Me</strong></h3>
+  <br><br><br><br>
+  <div  style="display: flex;">
+    <p  style="color: black; font-size:40px; padding-left:2%"> 📍Siliguri, West Bengal, India</p>
+    <p  style="color: black; font-size:40px;  padding-left:2%">📞8918633289</p>
+    <p  style="color: black; font-size:40px;  padding-left:2%">✉️ nagsomdatta2@gmail.com</p>
+    <p  style="color:black; font-size:40px;  padding-left:2%"><a href="https://www.linkedin.com/in/somdatta-nag-523362260/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BOdgZ6gGlT0aZRXxC2XoC8g%3D%3D"><img style="height:60px; width:70px" src="https://cdn3.emoji.gg/emojis/8197-linkedin.png"> </a></p>
+    <p  style="color: black; font-size:40px;  padding-left:2%"><a  href="https://github.com/SomdattaNag"><img src="https://w7.pngwing.com/pngs/914/758/png-transparent-github-social-media-computer-icons-logo-android-github-logo-computer-wallpaper-banner-thumbnail.png" alt="github" style="height: 60px; width:70px"></a></p>
+    <p style="color: black; font-size:40px;  padding-left:2%"><a  href="https://www.instagram.com/somdatta_nag/"><img src="https://static.vecteezy.com/system/resources/previews/014/414/683/non_2x/instagram-black-logo-on-transparent-background-free-vector.jpg" alt="instagram" style="height: 60px; width:70px"></a></p>
+  </div>
+ </div><br><br>
+ <div class="footer" style="background-color:black ; display:flex; color: white; height:150px"><br><br><br>
+  <p style="text-align: center; padding-left:37%; font-size:30px"> Thanks for visiting my website. Follow me on my socials.<br><br>
+   &copy; 2023 Somdatta Nag. All Rights Reserved.</p>
+</div>
+</div>
+
+</body>
+</html>
